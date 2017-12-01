@@ -13,7 +13,3 @@ Key requirements: company needs documentation that salaried employees did or did
 - Administrate admin dashboard
 - Email summary to managers for approval
 - Needs to be styled
-
-
-## Refactor TODOs:
-- Refactor user association integration test in post_spec
