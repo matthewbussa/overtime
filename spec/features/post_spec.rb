@@ -29,6 +29,15 @@ describe 'navigate' do
     end
   end
 
+  describe 'new' do
+    it 'has a link from the homepage' do 
+      visit root_path
+      click_link("new_post_from_nav")
+      
+      
+    end
+  end
+
   describe 'creation' do
   	before do
   		visit new_post_path
@@ -59,7 +68,7 @@ describe 'navigate' do
     before do
       @post = FactoryGirl.create(:post)      
     end
-    
+
     it 'can be reached by clicked edit on index page' do
       visit posts_path
       click_link("edit_#{@post.id}")
